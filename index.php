@@ -28,6 +28,19 @@ input {
 input:focus {
     padding: 5px;
 }
+.btn {
+    background: rgb(2,0,36);
+    background: linear-gradient(19deg, rgba(2,0,36,1) 0%, rgba(21,21,189,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+}
+.btn:hover {
+    box-shadow: 0 0 25px black;
+    background: linear-gradient(119deg, rgba(2,0,36,1) 0%, rgba(21,21,189,1) 0%, rgba(0,212,255,1) 100%);
+}
 </style>
 <div class="sign flex centerJC centerAI">
     <div>
@@ -42,7 +55,7 @@ input:focus {
     <form action="app/sign/signin" class="flex col centerJC centerAI" method="POST">
         <input type="text" placeholder="Логин" name="login">
         <input type="text" placeholder="Пароль" name="pass">
-        <input type="submit" value="Войти" name="signin">
+        <input type="submit" value="Войти" name="signin" class="btn">
     </form>
 </div>
 
